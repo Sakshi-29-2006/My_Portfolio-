@@ -194,22 +194,29 @@ footer {
 }
 /* 📌 Mobile Responsive Design */
 @media (max-width: 768px) {
-    /*  Make Navbar Mobile-Friendly */
+    /* 🌟 Make Navbar Mobile-Friendly */
     .navlist {
         flex-direction: column;
         height: auto;
-        gap: 1rem;
         padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(254, 219, 244, 0.9); /* Ensure it's visible */
     }
 
     .navlist li {
         text-align: center;
+        padding: 8px 0;
     }
 
-    /*  Stack left & right containers */
+    /* 🌟 Stack left & right containers */
     .Portfolio-container {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        padding-top: 70px; /* Prevent overlap with fixed navbar */
     }
 
     .left-container, .right-container {
@@ -218,37 +225,38 @@ footer {
         justify-content: center;
     }
 
-    .left-container {
-        padding-left: 0;
+    .right-container {
+        display: none; /* Hide right container to avoid design break */
     }
 
-    /*  Adjust Headings and Text for Smaller Screens */
+    /* 🌟 Adjust Headings & Text for Mobile */
     .content h1 {
-        font-size: 2.5rem; /* Reduce from 4rem */
+        font-size: 2.2rem;
     }
 
     .content .intro {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .content .detail {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         max-width: 90%;
         margin: auto;
     }
 
-    /*  Center Social Media Icons */
+    /* 🌟 Center Social Media Icons */
     .icons {
         flex-direction: row;
         justify-content: center;
-        gap: 2rem;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .icons .fa-brands {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
-    /*  Make Buttons More Tap-Friendly */
+    /* 🌟 Make Buttons More Tap-Friendly */
     .btn-container {
         display: flex;
         flex-direction: column;
@@ -258,30 +266,31 @@ footer {
     .btn-container button {
         width: 90%;
         font-size: 1rem;
-        padding: 1rem;
-        margin: 10px 0;
+        padding: 0.8rem;
+        margin: 8px 0;
     }
 
-    /*  Ensure Images Fit Smaller Screens */
+    /* 🌟 Ensure Images Fit Properly */
     .project-img {
         width: 90%;
-        max-width: 400px;
+        max-width: 350px;
         height: auto;
+        border-radius: 8px;
     }
 
-    /*  Adjust Circle Design */
+    /* 🌟 Adjust Circle Design */
     .design .circle:nth-child(1),
     .design .circle:nth-child(2) {
-        width: 15rem; /* Reduce size */
-        height: 15rem;
+        width: 12rem; /* Reduce size */
+        height: 12rem;
         left: 50%;
-        top: 55%;
+        top: 50%;
         transform: translate(-50%, -50%);
     }
 
-    /*  Adjust Section Padding */
+    /* 🌟 Adjust Section Padding */
     .section {
-        padding: 3rem 1rem;
+        padding: 2.5rem 1rem;
     }
 
     .section h1 {
@@ -292,8 +301,9 @@ footer {
         font-size: 1.1rem;
     }
 
-    /*  Footer */
+    /* 🌟 Footer */
     footer {
         font-size: 0.9rem;
+        padding: 1rem;
     }
 }
