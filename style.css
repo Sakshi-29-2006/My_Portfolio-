@@ -176,6 +176,90 @@ button:nth-child(2):hover{
     font-weight: 500;
     font-size: 1.4rem;
 }
+.skills-section {
+    background-color: #eaf9fb;
+    padding: 4rem 2rem;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skills-container h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Skill Card Layout */
+.skill-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-text {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.skill-text h3 {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+.badge-container {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.education-table th {
+    background-color: #00bcd4;
+    color: #fff;
+    font-weight: bold;
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 #about{
     background-color: rgb(250, 191, 229);
 }
@@ -184,6 +268,12 @@ button:nth-child(2):hover{
 }
 #contact{
     background-color: rgb(202, 255, 236);
+}
+#skills{
+    background-color: rgb(249, 199, 255);
+}
+#education{
+    background-color: #f2f2f2;
 }
 footer {
     text-align: center;
